@@ -1,0 +1,8 @@
+<div [ngStyle]="{'display': 'flex'}">
+    <div id="naslov" *ngFor="let room of rooms" (click) = "showDetails(room.id)">
+        Id: {{room.id}}
+        <br>
+        Name: {{room.name}}
+    </div>
+</div>
+

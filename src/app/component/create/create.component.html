@@ -1,0 +1,28 @@
+<div class="title">
+    CREATE A NEW ROOM:
+</div>
+
+<div class="form">
+    ID: 
+    <br>
+    <input [(ngModel)]="getId" type="number" min = "1" placeholder="ID" [ngStyle]="{'margin-bottom': '10px'}">
+    <br>
+    Name: 
+    <br>
+    <input [(ngModel)]="getName" type="text" placeholder="Name" [ngStyle]="{'margin-bottom': '10px'}">
+    <br>
+    Capacity: 
+    <br>
+    <input [(ngModel)]="getCapacity" type="number" min = "0" placeholder="Capacity" [ngStyle]="{'margin-bottom': '10px'}">
+    <br>
+    Is occupied: <input type="checkbox" (click)="Occupied()" >
+    <br>
+    <button (click)="Create()">CREATE</button>
+</div>
+
+<div class="FeedbackMessage" [ngStyle]="{'margin-left': '650px', 'margin-top': '20px', 'width': '250px'}">
+    {{feedbackMessage}}
+</div>
+<div class="DescriptionMessage" [ngStyle]="{'margin-left': '650px', 'margin-top': '20px', 'width': '500px'}">
+    {{descriptionMessage}}
+</div>
